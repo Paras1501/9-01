@@ -61,6 +61,27 @@
           float: left;
           background-color: lightblue;
         }
+        img {
+        opacity: 0.5;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -447,8 +468,17 @@ function showPosition(position) {
 }
 </script>
 
-<div id="margin">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+<div id="margin">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div><br><hr>
 
-  </body>
+<!-- dropdown -->
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div><br><hr>
+
+
+</body>
 </html>
   
