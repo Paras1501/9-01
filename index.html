@@ -1,1 +1,454 @@
-<p>this is my work</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tutorial</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <style>
+      /* body {
+          background-image: url('workplace.jpg');
+          background-repeat: no-repeat; 
+          background-position: right top;
+          background-attachment: fixed;
+        } */
+
+      table,th,td {
+        border: 1px solid black;
+        /* border-radius: 10px; */
+        /* border-style: dotted solid double dashed; */
+      }
+      th, td {
+      background-color: #96D4D4;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 40px;
+
+      }
+
+      .mycontainer {
+      display: flex;
+      }
+      .mycontainer > div {
+      width:33%;
+      }
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;}
+
+        #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+        }
+        #margin{
+          border: 1px solid black;
+          /* margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 150px;
+          margin-left: 80px; */
+          margin: 0 0 50px 0;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-bottom: 50px;
+          padding-left: 80px;
+          overflow: scroll;
+          float: left;
+          background-color: lightblue;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- introduction -->
+    <h1>My First Heading</h1>
+    <br />
+    <p>My first paragraph.</p>
+    <hr />
+
+    <!--Attribute-->
+    <a href="https://www.google.com">Visit google Website</a><br />
+    <img src="PHOTO.jpg" width="500" height="600" alt="Photo" /><br />
+    <p style="color: red">This is a red paragraph.</p>
+    <br />
+    <hr />
+
+    <!-- Heading -->
+    <h1>Heading 1</h1>
+    <br />
+    <h2>Heading 2</h2>
+    <br />
+    <h3>Heading 3</h3>
+    <br />
+    <h4>Heading 4</h4>
+    <br />
+    <h5>Heading 5</h5>
+    <br />
+    <h6>Heading 6</h6>
+    <br />
+    <hr />
+
+    <!--Paragraphs -->
+    <p>
+      This paragraph contains a lot of lines in the source code, but the browser
+      ignores it.
+    </p>
+    <br />
+
+    <pre>
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+      </pre
+    >
+    <hr />
+    <!-- style -->
+    <h1 style="color: blue">This is a heading</h1>
+    <br />
+    <p style="color: red">This is a paragraph.</p>
+    <hr />
+
+    <!-- Formating -->
+    <b>This text is bold</b><br />
+    <strong>This text is important!</strong><br />
+    <i>This text is italic</i><br />
+    <small>This is some smaller text.</small><br />
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <br />
+    <p>My favorite color is <del>blue</del> red.</p>
+    <br />
+    <p>H<sub>2</sub>O</p>
+    <br />
+    <p>X<sup>2</sup></p>
+    <br />
+    <!-- Quotation -->
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+    <br />
+    <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+    <br />
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <br />
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+    <!-- Color -->
+    <h1 style="background-color: rgb(255, 0, 0)">this is red</h1>
+    <br />
+    <h1 style="background-color: rgb(0, 0, 255)">this is blue</h1>
+    <br />
+
+    <h1 style="background-color: #ff0000">HEX</h1>
+    <br />
+    <h1 style="background-color: #0000ff">HEX</h1>
+    <br />
+
+    <h1 style="background-color: hsl(0, 100%, 50%)">HSL</h1>
+    <h1 style="background-color: hsl(240, 100%, 50%)">HSL</h1>
+
+    <!-- LINk -->
+    <a href="https://www.facebbok.com/" target="_blank">Visit facebook.com!</a
+    ><br />
+    <a href="https://www.facebbok.com/" target="_self">Visit facebook.com!</a
+    ><br />
+    <a href="https://www.facebbok.com/" target="_parent">Visit facebook.com!</a
+    ><br />
+    <a href="https://www.facebbok.com/" target="_top">Visit facebook.com!</a
+    ><br />
+
+    <a href="mailto:someone@example.com">Send email</a><br />
+
+    <button onclick="document.location='https://www.facebbok.com'">
+      visit google</button
+    ><br />
+
+    <!-- Image -->
+    <img
+      src="workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+      width="400"
+      height="379"
+    />
+
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Computer"
+        href="computer.htm"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        alt="Phone"
+        href="phone.htm"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        alt="Cup of coffee"
+        href="coffee.htm"
+      /> </map
+    ><br />
+    <hr />
+
+    <!--Table  -->
+    <table>
+      <tr>
+        <th style="width:50%" colspan="2">name</th>
+        <th>age</th>
+        <th>gender</th>
+      </tr>
+      <tr style="height:200px">
+        <td>paras</td>
+        <td>20</td>
+        <td>male</td>
+      </tr>
+      <tr>
+        <td>rajan</td>
+        <td>15</td>
+        <td>male</td>
+      </tr>
+    </table><hr>
+    <table>
+      <colgroup>
+        <col span="1" style="background-color: #D6EEEE">
+      </colgroup>
+      <tr>
+        <th>Name</th>
+        <td>paras</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>9429177713</td>
+      </tr>
+      <tr>
+        <td>99224252797</td>
+    </tr>
+    </table><br><hr>
+
+    <!-- list -->
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul><br>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol><br>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl><br><hr>
+
+    <!-- Blocklevel element -->
+    <p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+      A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+    </p>
+
+    <!-- Inline element -->
+    <p>An inline element does not start on a new line.
+
+      An inline element only takes up as much width as necessary.
+      
+      This is a <span> element inside a paragraph.
+
+    </p>
+
+    <!-- Div -->
+    <div class="mycontainer">
+    <div>
+      <h2>Gandhinagar</h2>
+      <p>Gandhinagar is the capital city of gujrat.</p>
+      <p>gandhinagar is agreen city of india.</p>
+    </div>
+    <div>
+      <h2>Oslo</h2>
+      <p>Oslo is the capital city of Norway.</p>
+      <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    
+    <div>
+      <h2>Rome</h2>
+      <p>Rome is the capital city of Italy.</p>
+      <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+  </div>
+
+  <!-- Class -->
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div><hr>
+
+<!-- ID -->
+  <h1 id="myHeader">My Header</h1><hr>
+
+<!-- Iframe -->
+  <iframe src="index.html" height="200" width="300" title="Iframe Example"></iframe><br><hr>
+
+<!-- javascript -->
+<script>
+  function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "pic_bulboff.gif"
+    } else {
+      pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+  }
+  </script>
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p><br><hr>
+
+<!-- File path -->
+<pre>
+img src="picture.jpg"	The "picture.jpg" file is located in the same folder as the current page
+img src="images/picture.jpg"	The "picture.jpg" file is located in the images folder in the current folder
+img src="/images/picture.jpg"	The "picture.jpg" file is located in the images folder at the root of the current web
+img src="../picture.jpg"	The "picture.jpg" file is located in the folder one level up from the current folder
+</pre><br><hr>
+
+<!-- Simenrtti -->
+<pre>What are Semantic Elements?
+  A semantic element clearly describes its meaning to both the browser and the developer.
+  
+  Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+  
+  Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+</pre><br><hr>
+    
+<!-- Entity symbole emoji -->
+<h2>The registered trade mark sign: &reg;</h2><br>
+<h2>The yen sign: &yen;</h2><br>
+<h2>&#128513;</h2><br><hr>
+
+<!-- Form -->
+<form action="/action_page.php" method="post" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="first name"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="last name">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+<!-- Canva -->
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+  Your browser does not support the HTML canvas tag.</canvas>
+  
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Arial";
+  ctx.fillText("Hello World",10,50);
+  </script><br>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<!-- Video -->
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+</video>
+
+<!-- audio -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Geolocation -->
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+<div id="margin">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+  </body>
+</html>
+  
